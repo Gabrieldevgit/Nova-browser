@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "notes": "• Vertical tabs & split screen\n• Collections panel\n• Web Capture tool\n• Read Aloud (TTS)\n• NTP Page Settings panel\n• Auto-updater\n• Three-dots menu revamp\n• Memory & Energy Saver\n• Auth fixes\n• NTP Add Shortcut now saves permanently",
-  "downloadUrl": "https://github.com/DeveloppementTeamStudios/nova-browser/releases",
-  "minVersion": "0.7.0",
-  "releaseDate": "2026-04-06"
+  "notes": "🎉 Nova Browser v1.0.0\n• VPN with 16 countries (SOCKS5)\n• Ctrl+` toggles vertical tabs\n• Complete dialog system (alert/confirm/prompt)\n• Full keyboard shortcuts\n• BrowserView layering fix\n• ResizeObserver for accurate chrome positioning\n• Firestore error handling\n• Cache error fix",
+  "downloadUrl": "https://github.com/Gabrieldevgit/Nova-browser/releases",
+  "minVersion": "0.5.0",
+  "releaseDate": "2026-04-13"
 }

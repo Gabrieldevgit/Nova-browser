@@ -1,0 +1,93 @@
+{
+  "name": "nova-browser",
+  "version": "1.1.0",
+  "description": "Nova Browser — a modern Electron-based web browser",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder --win --x64",
+    "build:all": "electron-builder --win --mac --linux",
+    "build:portable": "electron-builder --win portable",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.novateam.novabrowser",
+    "productName": "Nova Browser",
+    "copyright": "Copyright © 2026 Developpement Team Studios",
+    
+    "directories": {
+      "output": "dist",
+      "buildResources": "build-assets"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "nova-adblocker/**/*",
+      "node_modules/**/*",
+      "!node_modules/.cache",
+      "!**/*.map",
+      "!**/*.md"
+    ],
+    "extraResources": [
+      {
+        "from": "nova-adblocker",
+        "to": "nova-adblocker"
+      }
+    ],
+    "win": {
+      
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+        
+      ],
+      "icon": "build-assets/icon.ico",
+      "verifyUpdateCodeSignature": false,
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "installerIcon": "build-assets/icon.ico",
+      "uninstallerIcon": "build-assets/icon.ico",
+      "installerHeaderIcon": "build-assets/icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Nova Browser",
+      "deleteAppDataOnUninstall": false,
+      "include": "build-assets/installer.nsh"
+    },
+    "portable": {
+      "artifactName": "Nova-Browser-${version}-Portable.exe"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "build-assets/icon.icns",
+      "category": "public.app-category.utilities"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "icon": "build-assets/icon.png",
+      "category": "Network"
+    },
+    "publish": null
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "author": {
+    "name": "Developpement Team Studios",
+    "email": "gabethan1316@gmail.com"
+  },
+  "license": "MIT"
+}
