@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.2.0",
   "notes": "🎉 Nova Browser v1.0.0\n• VPN with 16 countries (SOCKS5)\n• Ctrl+` toggles vertical tabs\n• Complete dialog system (alert/confirm/prompt)\n• Full keyboard shortcuts\n• BrowserView layering fix\n• ResizeObserver for accurate chrome positioning\n• Firestore error handling\n• Cache error fix",
   "downloadUrl": "https://github.com/Gabrieldevgit/Nova-browser/releases",
   "minVersion": "0.5.0",
