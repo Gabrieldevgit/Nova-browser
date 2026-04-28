@@ -2539,13 +2539,6 @@ Media playback support
 
 
 
-Basic dev tools (Inspect Element)
-
-
-
-
-
-
 
 🧨 Reality Check
 
@@ -2579,3 +2572,18 @@ Weak performance → users really leave
 
 I forgot to say: Since this is mathematically impossible to do this in a only session, you can split all of this plan in number of parts you want. DTS will do the build-in PDF viewer.
 
+Pages cannot ask for permissions, can you add the feature of the permission (with the prompt if the user set ask).
+
+Search other NON-NEGOTIABLE feature on the web, and VERY useful feature that Chrome/Edge/Firefox/Safari etc...
+
+For the "Live" feature, there is a button at left of the button to create a new window.
+
+Also, there is an medium issue when a user reduce the browser app for a couple of minutes, and go back inside the page unload, and take 10+ second to load again.
+
+In this version at the start of the app, the newtab page is not automatically created, the user have to create it, but when the user create it that create twice.
+
+In Window, when a user want to open a HTML or whatever files that browser can show the preview, the app open but the file is not opened as file:// and hsa not his prefix before the page URl.
+Can you make Nova support the stuffs that usualy browser support ?
+<img width="1280" height="738" alt="image" src="https://github.com/user-attachments/assets/e5df8375-b75f-4b53-98ae-68e0622dd8ec" />
+<img width="1229" height="933" alt="image" src="https://github.com/user-attachments/assets/8e98cd75-41db-4a69-aad6-dfa783cb40df" />
+<img width="1150" height="931" alt="image" src="https://github.com/user-attachments/assets/ba4c220b-3deb-424d-8f40-076e91957768" />
